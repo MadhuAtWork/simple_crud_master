@@ -1,0 +1,84 @@
+body > table{
+    width: 80%;
+}
+table{
+    border-collapse: collapse;
+    
+}
+table.list{
+    width: 100%;
+}
+                       
+th{
+    background-color: rgb(187, 6, 121);
+    color: white;
+}
+td, th{
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr{
+    background-color: #dddddd;
+}
+input{
+    width:60%;
+    padding:5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form div.form-action-buttons{
+    text-align: right;
+    width:200px;
+    /* background-color: #da610a */
+}
+form div.form-action-buttons input{
+    
+    background-color: #da610a;
+    color: white;
+    margin: 10px;
+}
+form{
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    /* border: 1px solid; */
+  box-shadow:5px 5px 5px #aaaaaa;;
+}
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;   
+}
+label.validation-error{
+    color: red;
+    margin-left: 5px;
+}
+.hide{
+    display: none;
+}
+.main_master{
+    width:45%;
+    margin: 10px;
+}
+.new_exist_master{
+    display: flex;
+    justify-content: space-between;
+
+}
+.new_exist_master button{
+ background-color: #da610a;
+ padding: 10px;
+ margin: 5px;
+ border: 0;
+ color: white;
+
+}
+.master_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

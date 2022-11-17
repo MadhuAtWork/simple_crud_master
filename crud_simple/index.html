@@ -1,0 +1,103 @@
+<!-- Curd operation table with edit,delete functionality  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>crud operation</title>
+</head>
+
+<body>
+<div class="master_container">
+
+    <form >
+        <div class="main_master">
+            <label>mc_name</label>
+            <input type="text" name="mc_name" >
+        </div>
+        <div  class="main_master">
+            <label>mc_Code</label>
+            <input type="text" name="mc_Code" >
+        </div>
+        <div  class="main_master">
+            <label>mc_branch</label>
+            <input type="text" name="mc_branch" >
+        </div>
+        <div  class="main_master">
+            <label>mcl</label>
+            <input type="text" name="mcl" >
+        </div>
+
+        <div class="form-action-buttons">
+            <input type="submit" value="Search">
+        </div>
+    </form>
+    </div>
+<br>
+<br>
+<div class="new_exist_master">
+    <button>Add</button>
+    <button>
+        <a herf="master_crud">
+            exit
+        </a>
+    </button>
+</div>
+
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Meeting center Name</th>
+                            <th>Meeting center Code</th>
+                            <th>Meeting center branch</th>
+                            <th>Meeting center lead</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        
+<br>
+<br>
+<br>
+<div class="master_container" id="form1">
+
+    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+        <div class="main_master">
+            <label>mc_name</label>
+            <input type="text" name="mc_name" id="fullName">
+        </div>
+        <div  class="main_master">
+            <label>mc_Code</label>
+            <input type="text" name="mc_Code" id="empCode">
+        </div>
+        <div  class="main_master">
+            <label>mc_branch</label>
+            <input type="text" name="mc_branch" id="salary">
+        </div>
+        <div  class="main_master">
+            <label>mcl</label>
+            <input type="text" name="mcl" id="city">
+        </div>
+
+        <div class="form-action-buttons">
+            <input type="submit" value="Save" id="form1show">
+
+        </div>
+    </form>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
